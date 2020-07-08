@@ -1,0 +1,39 @@
+/*===  PRELOADER CSS  ===*/
+.preloader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	color: $black-700;
+	background-color: #f3e8e8;
+	z-index: 9999999;
+	text-align: center;
+	overflow: hidden;
+	@include transition(.5s);
+}
+.preloader-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	@include transition(.7s ease);
+	@include transform(translate(-50%, -50%));	
+	.spinner-border {
+		border-width: .15em;
+		position: absolute;
+		top: -30%;
+		color: $black-500;
+		left: calc(50% - 1rem);
+		@include transition(all .3s);
+		span {
+			display: block;
+		}
+	}
+}
+.preloader-wrapper.loaded {
+	height: 0;
+	.spinner-border {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,36 @@
+@mixin transition($transition-value) {
+    transition: $transition-value;
+    -webkit-transition: $transition-value;
+    -moz-transition: $transition-value;
+    -ms-transition: $transition-value;
+    -o-transition: $transition-value;
+}
+@mixin transform($transform-value) {
+    transform: $transform-value;
+    -webkit-transform: $transform-value;
+    -moz-transform: $transform-value;
+    -ms-transform: $transform-value;
+    -o-transform: $transform-value;
+}
+@mixin transition-delay($delay-value) {
+    transition-delay: $delay-value;
+    -webkit-transition-delay: $delay-value;
+    -moz-transition-delay: $delay-value;
+    -ms-transition-delay: $delay-value;
+    -o-transition-delay: $delay-value;
+}
+@mixin radius($radius-value) {
+    border-radius: $radius-value;
+    -webkit-border-radius: $radius-value;
+    -moz-border-radius: $radius-value;
+    -ms-border-radius: $radius-value;
+    -o-border-radius: $radius-value;
+}
+
+// Responsive media
+$lg-device : '(max-width: 1200px)';
+$md-device : '(max-width: 991px)';
+$sm-device : '(max-width: 767px)';
+$xs-device : '(max-width: 575px)';
+$xxs-device : '(max-width: 480px)';
+  

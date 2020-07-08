@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "CircularStdBook";
+	src: url("./CircularStdBook.eot");
+	src: url("./CircularStdBook.eot?#iefix") format("embedded-opentype"), url("./CircularStdBook.woff2") format("woff2"), url("./CircularStdBook.woff") format("woff"), url("./CircularStdBook.ttf") format("truetype"),
+}
+@font-face {
+	font-family: 'CircularStdBold';
+	src: url('./CircularStdBold.eot');
+	src: local('CircularStdBold'), url('./CircularStdBold.woff') format('woff'), url('./CircularStdBold.ttf') format('truetype');
+}

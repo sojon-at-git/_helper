@@ -1,0 +1,108 @@
+body {
+    color: $black-700;
+    background-color: $white;
+	font-family: $secondary-font;
+    font-size: 15px;
+    line-height: 1.65;
+	overflow-y: hidden;
+}
+body.loaded {
+	overflow-y: scroll;
+}
+::-webkit-selection {
+	color: $black;
+	background-color: $white;
+	text-shadow: none;
+}
+::-moz-selection {
+	color: $black;
+	background-color: $white;
+	text-shadow: none;
+}
+::selection {
+	color: $black;
+	background-color: $white;
+	text-shadow: none;
+}
+:focus {
+    outline: 0;
+}
+
+.butn {
+    padding: 10px 26px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    @include transition(all .3s);
+}
+.butn.butn-dark {
+    background-color: $black-200;
+    color: $white;
+}
+.butn.butn-dark:hover {
+    background-color: $black-400;
+    color: $white;
+}
+.butn.butn-light {
+    border-color: $black;
+    background-color: $white;
+    color: $black-200;
+}
+.butn.butn-light:hover {
+    border-color: $black;
+    background-color: #eee;
+}
+
+/*=== UTILITIES CLASSES ===*/
+.text-primary {font-family: $font-primary}
+.text-secondary {font-family: $font-secondary}
+
+.shadow {box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.04) !important}
+
+.opacity-0, .opacity-0-hover,
+.opacity-25, .opacity-25-hover,
+.opacity-50, .opacity-50-hover,
+.opacity-75, .opacity-75-hover,
+.opacity-1, .opacity-1-hover {
+    @include transition(all .3s);
+}
+.opacity-0, .opacity-0-hover:hover {opacity: 0}
+.opacity-25, .opacity-25-hover:hover {opacity: .25}
+.opacity-50, .opacity-50-hover:hover {opacity: .50}
+.opacity-75, .opacity-75-hover:hover {opacity: .75}
+.opacity-1, .opacity-1-hover:hover {opacity: 1}
+
+.z-index-1 {z-index: 1}
+.z-index-100 {z-index: 100}
+.z-index-200 {z-index: 200}
+.z-index-bottom {z-index: -5}
+.z-index-top {z-index: 9900}
+
+.text-gray {color: $gray}
+.bg-gray {background-color: $gray}
+.text-red {color: $red}
+.bg-red {background-color: $red}
+.text-purple {color: $purple}
+.bg-purple {background-color: $purple}
+.text-dark-purple {color: $purple-dark}
+.bg-dark-purple {background-color: $purple-dark}
+
+.bg-black {background-color: $black}
+.text-black {color: $black}
+.text-black-100 {color: $black-100}
+.bg-black-100 {background-color: $black-100}
+.bg-black-200 {background-color: $black-200}
+.text-black-200 {color: $black-200}
+.bg-black-300 {background-color: $black-300}
+.text-black-300 {color: $black-300}
+.text-black-400 {color: $black-400}
+.bg-black-400 {background-color: $black-400}
+.bg-black-500 {background-color: $black-500}
+.text-black-500 {color: $black-500}
+.text-black-600 {color: $black-600}
+.bg-black-600 {background-color: $black-600}
+.bg-black-700 {background-color: $black-700}
+.text-black-700 {color: $black-700}
+.text-black-800 {color: $black-800}
+.bg-black-800 {background-color: $black-800}
+.bg-black-900 {background-color: $black-900}
+.text-black-900 {color: $black-900}

@@ -1,0 +1,50 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: $primary-font;
+}
+h1, .h1 {
+    font-size: 42px;
+}
+h2, .h2 {
+    font-size: 32px;
+}
+h3, .h3 {
+    font-size: 24px;
+}
+h4, .h4 {
+    font-size: 18px;
+}
+h5, .h5 {
+    font-size: 16px;
+}
+h6, .h6 {
+    font-size: 16px;
+}
+p {
+    font-family: $secondary-font;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+    margin: 0;
+}
+a:focus,
+button:focus {
+	outline: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    @include transition(all .3s)
+}
+a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: 0;
+}
+a:hover {
+	color: initial;
+}
+ol {
+    list-style-position: inside;
+}
+ul, li {
+	padding: 0;
+	margin: 0;
+}
