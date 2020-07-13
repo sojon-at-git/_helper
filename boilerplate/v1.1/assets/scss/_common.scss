@@ -1,8 +1,8 @@
 body {
-    color: $black-700;
-    background-color: $white;
-	font-family: $secondary-font;
-    font-size: 15px;
+    color: $gray;
+    background-color: #1A191E;
+	font-family: $font-secondary;
+    font-size: 16px;
     line-height: 1.65;
 	overflow-y: hidden;
 }
@@ -28,33 +28,9 @@ body.loaded {
     outline: 0;
 }
 
-.butn {
-    padding: 10px 26px;
-    border: 1px solid transparent;
-    font-size: 15px;
-    @include transition(all .3s);
-}
-.butn.butn-dark {
-    background-color: $black-200;
-    color: $white;
-}
-.butn.butn-dark:hover {
-    background-color: $black-400;
-    color: $white;
-}
-.butn.butn-light {
-    border-color: $black;
-    background-color: $white;
-    color: $black-200;
-}
-.butn.butn-light:hover {
-    border-color: $black;
-    background-color: #eee;
-}
-
 /*=== UTILITIES CLASSES ===*/
-.text-primary {font-family: $font-primary}
-.text-secondary {font-family: $font-secondary}
+.font-primary {font-family: $font-primary}
+.font-secondary {font-family: $font-secondary}
 
 .shadow {box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.04) !important}
 
@@ -81,10 +57,8 @@ body.loaded {
 .bg-gray {background-color: $gray}
 .text-red {color: $red}
 .bg-red {background-color: $red}
-.text-purple {color: $purple}
-.bg-purple {background-color: $purple}
-.text-dark-purple {color: $purple-dark}
-.bg-dark-purple {background-color: $purple-dark}
+.text-dark {color: $dark !important}
+.bg-dark {background-color: $dark !important}
 
 .bg-black {background-color: $black}
 .text-black {color: $black}

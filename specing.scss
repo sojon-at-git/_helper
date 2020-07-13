@@ -1,0 +1,19 @@
+/* =========== - ===========
+  SPACING * STEP-5
+=========== - =========== */
+
+$step: 5; // minimum value
+$max: 101; // maximum value (+)1
+@for $i from 1 through ceil($max/$step) {
+    $value: ($i - 1)*$step;
+    .mt-#{$value}{margin-top: #{$value}px !important;};
+    .mb-#{$value}{margin-bottom: #{$value}px !important;};
+    .ml-#{$value}{margin-left: #{$value}px !important;};
+    .mr-#{$value}{margin-right: #{$value}px !important;};
+    .pt-#{$value}{padding-top: #{$value}px !important;};
+    .pb-#{$value}{padding-bottom: #{$value}px !important;};
+    .pl-#{$value}{padding-left: #{$value}px !important;};
+    .pr-#{$value}{padding-right: #{$value}px !important;};
+    .height-#{$value}{height: #{$value}px !important;};
+    .width-#{$value}{width: #{$value}px !important;};
+}
