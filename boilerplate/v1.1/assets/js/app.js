@@ -1,8 +1,8 @@
 /*==============================================================================
- * Template Name: Blogeria - Personal Blog Template
- * Author: Themefisher
+ * Template Name: templateNameHere
+ * Author: authorName
  * Version: 1.0
- * Copyright 2020 Themefisher
+ * Copyright 2020 authorName
 ==============================================================================*/
 (function ($) {
     "use strict";
@@ -12,29 +12,13 @@
     });
 
     $(document).ready(function () {
-        searchToggle();
-        selectricSelect();
+        
     });
 
     // PreLoader Init
     function preLoader() {
         $('body').addClass('loaded');
         $('.preloader-wrapper').addClass('loaded');
-    };
-
-    // searchToggle Init
-    function searchToggle() {
-        $('.search-btn').on('click', function() {
-            $('.search-wrapper').addClass('showSearch');
-        });
-        $('.search-close-wrap, .search-close-btn').on('click', function() {
-            $('.search-wrapper').removeClass('showSearch');
-        });
-    };
-
-    // selectricSelect Init
-    function selectricSelect() {
-        $('select').selectric();
     };
 
 })(jQuery);
