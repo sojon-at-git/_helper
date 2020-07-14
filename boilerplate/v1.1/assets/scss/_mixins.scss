@@ -12,13 +12,6 @@
     -ms-transform: $transform-value;
     -o-transform: $transform-value;
 }
-@mixin transition-delay($delay-value) {
-    transition-delay: $delay-value;
-    -webkit-transition-delay: $delay-value;
-    -moz-transition-delay: $delay-value;
-    -ms-transition-delay: $delay-value;
-    -o-transition-delay: $delay-value;
-}
 @mixin radius($radius-value) {
     border-radius: $radius-value;
     -webkit-border-radius: $radius-value;
