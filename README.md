@@ -1,5 +1,15 @@
 # jQuery Shortcodes
 
+## Set Height of an Element
+```javascript
+// set-element-height
+function setElementHeight() {
+	var headerHeight = $('.element').innerHeight();
+	$('.element').before('<div style="height:'+headerHeight+'px"></div>');
+}
+setElementHeight();
+```
+***
 ## Header PinUnpin
 ```javascript
 // headerPinUnpin init
